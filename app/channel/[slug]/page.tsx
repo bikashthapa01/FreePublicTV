@@ -88,7 +88,6 @@ export default async function ChannelPage({
               <SmartPlayer
                 streams={channel.streams}
                 autoPlay
-                muted
                 poster={channel.logo || "/default.svg"}
               />
             </div>
