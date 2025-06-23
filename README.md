@@ -4,7 +4,7 @@ FreePublicTV is an open-source, modern, and legal TV streaming discovery platfor
 
 ## 🌍 Demo
 
-Coming Soon / Setting up Domain
+[https://freepublictv.com](https://freepublictv.com)
 
 ## ✨ Features
 
