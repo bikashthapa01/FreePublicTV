@@ -25,16 +25,16 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/countries" className="hover:text-blue-500">
+              <Link href="/country" className="hover:text-blue-500">
                 Countries
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link href="/languages" className="hover:text-blue-500">
                 Languages
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
