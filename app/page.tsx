@@ -22,7 +22,7 @@ export default async function Home() {
       <Hero channels={topChannels} />
 
       {/* Category Slider Section */}
-      <section className="w-full bg-gradient-to-b from-slate-100 via-white to-slate-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800 transition-colors duration-500 py-10">
+      <section className="w-full bg-gradient-to-bfrom-slate-800 via-slate-800 to-slate-700 transition-colors duration-500 py-10">
         <CategorySlider />
       </section>
 

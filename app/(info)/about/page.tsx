@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 export default function AboutPage() {
   return (
-    <main className="max-w-screen-xl mx-auto px-4 py-20 text-white dark:text-slate-100 min-h-[57vh]">
+    <main className="max-w-screen-xl mx-auto px-4 py-20 text-white  min-h-[57vh]">
       <h1 className="text-3xl font-bold mb-4">About FreePublicTV</h1>
       <p className="mb-4">
         FreePublicTV is a global discovery platform for streaming public domain

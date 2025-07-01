@@ -28,7 +28,7 @@ export default async function ChannelsPage({
     <main className="max-w-screen-xl mx-auto px-4 py-6 flex flex-col gap-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-semibold text-slate-800 dark:text-white mb-1">
+          <h1 className="text-2xl font-semibold text-white mb-1">
             All Channels
           </h1>
           <span className="text-sm text-slate-500 dark:text-slate-400">

@@ -32,7 +32,7 @@ export default function CountryArchive() {
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
-    setPage(1); // reset to first page on search
+    setPage(1);
     router.push(`/country?page=1`);
   };
 
@@ -42,16 +42,16 @@ export default function CountryArchive() {
   };
 
   return (
-    <main className="min-h-screen w-full bg-gradient-to-b from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 py-10 px-4">
+    <main className="min-h-screen w-full bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 py-10 px-4 text-white">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-extrabold text-slate-800 dark:text-white mb-4">
+          <h1 className="text-4xl font-extrabold mb-4">
             Explore Channels by Country
           </h1>
           <input
             type="text"
             placeholder="Search country..."
-            className="w-full max-w-md mx-auto px-4 py-2 border rounded-md shadow-sm border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full max-w-md mx-auto px-4 py-2 border border-slate-700 rounded-md shadow-sm bg-slate-800 text-white placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 outline-none"
             value={query}
             onChange={handleSearchChange}
           />
@@ -62,14 +62,14 @@ export default function CountryArchive() {
             <Link
               key={country.code}
               href={`/country/${country.slug}`}
-              className="group bg-white/70 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-blue-600 transition-all p-4 flex flex-col items-center text-center"
+              className="group bg-slate-800 border border-slate-700 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-blue-600 transition-all p-4 flex flex-col items-center text-center"
             >
               <FallbackImage
                 src={country.flag}
                 alt={`${country.name} flag`}
                 className="w-12 h-8 object-cover rounded shadow mb-3 border"
               />
-              <span className="text-sm font-medium text-slate-800 dark:text-white group-hover:text-blue-600 transition">
+              <span className="text-sm font-medium group-hover:text-blue-400 transition">
                 {country.name}
               </span>
             </Link>
@@ -82,7 +82,7 @@ export default function CountryArchive() {
             {page > 1 && (
               <button
                 onClick={() => goToPage(page - 1)}
-                className="px-4 py-2 rounded-md bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-blue-100 dark:hover:bg-slate-700 transition"
+                className="px-4 py-2 rounded-md bg-slate-800 border border-slate-700 text-slate-200 hover:bg-blue-600 hover:text-white transition"
               >
                 ← Previous
               </button>
@@ -95,7 +95,7 @@ export default function CountryArchive() {
                 className={`px-4 py-2 rounded-md text-sm font-medium border ${
                   i + 1 === page
                     ? "bg-blue-600 text-white border-blue-600"
-                    : "bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-blue-100 dark:hover:bg-slate-700"
+                    : "bg-slate-800 border-slate-700 text-slate-300 hover:bg-blue-500 hover:text-white"
                 }`}
               >
                 {i + 1}
@@ -105,7 +105,7 @@ export default function CountryArchive() {
             {page < totalPages && (
               <button
                 onClick={() => goToPage(page + 1)}
-                className="px-4 py-2 rounded-md bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-blue-100 dark:hover:bg-slate-700 transition"
+                className="px-4 py-2 rounded-md bg-slate-800 border border-slate-700 text-slate-200 hover:bg-blue-600 hover:text-white transition"
               >
                 Next →
               </button>

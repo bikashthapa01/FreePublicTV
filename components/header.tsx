@@ -12,9 +12,7 @@ export default function Header() {
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
-            FreePublicTV
-          </span>
+          <span className="text-xl font-bold text-blue-200 ">FreePublicTV</span>
         </Link>
 
         {/* Hamburger */}
@@ -30,29 +28,29 @@ export default function Header() {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-white dark:bg-slate-900 md:static md:flex md:items-center md:space-x-6 md:w-auto`}
+          } absolute top-full left-0 w-full bg-slate-900 md:static md:flex md:items-center md:space-x-6 md:w-auto`}
         >
           <Link
             href="/"
-            className="block px-4 py-2 md:p-0 text-slate-700 dark:text-slate-200 hover:text-blue-500"
+            className="block px-4 py-2 md:p-0 text-slate-200 hover:text-blue-500"
           >
             Home
           </Link>
           <Link
             href="/channels"
-            className="block px-4 py-2 md:p-0 text-slate-700 dark:text-slate-200 hover:text-blue-500"
+            className="block px-4 py-2 md:p-0 text-slate-200 hover:text-blue-500"
           >
             Channels
           </Link>
           <Link
             href="/country"
-            className="block px-4 py-2 md:p-0 text-slate-700 dark:text-slate-200 hover:text-blue-500"
+            className="block px-4 py-2 md:p-0 text-slate-200 hover:text-blue-500"
           >
             Countries
           </Link>
           <Link
             href="/category"
-            className="block px-4 py-2 md:p-0 text-slate-700 dark:text-slate-200 hover:text-blue-500"
+            className="block px-4 py-2 md:p-0 text-slate-200 hover:text-blue-500"
           >
             Category
           </Link>

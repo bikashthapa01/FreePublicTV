@@ -57,7 +57,7 @@ export default async function CountryPage({
             className="w-full h-full object-cover"
           />
         </div>
-        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-800 dark:text-white">
+        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-white">
           Channels from {country.name}
         </h1>
       </header>

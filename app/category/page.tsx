@@ -32,15 +32,15 @@ export default function CategoryArchivePage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-[50vh] text-slate-500 dark:text-slate-300">
+      <div className="flex items-center justify-center min-h-[50vh] text-slate-400">
         Loading categories...
       </div>
     );
   }
 
   return (
-    <main className="max-w-screen-xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-8 text-center sm:text-left">
+    <main className="max-w-screen-xl mx-auto px-4 py-10  text-white min-h-screen">
+      <h1 className="text-3xl font-bold mb-8 text-center sm:text-left">
         Browse by Category
       </h1>
 
@@ -49,9 +49,9 @@ export default function CategoryArchivePage() {
           <Link
             key={category.id}
             href={`/category/${category.id.toLowerCase()}`}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col items-center justify-center text-center border border-slate-200 dark:border-slate-700"
+            className="bg-slate-800 rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col items-center justify-center text-center border border-slate-700 hover:border-blue-600"
           >
-            <h2 className="text-lg font-semibold text-slate-800 dark:text-white capitalize">
+            <h2 className="text-lg font-semibold capitalize hover:text-blue-400 transition">
               {category.name}
             </h2>
           </Link>
